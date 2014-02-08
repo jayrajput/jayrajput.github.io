@@ -1,0 +1,54 @@
+Date: 2014-01-11
+Title: Sed in 5 minutes
+
+I have known sed for a decade but have never understood the basics and some
+advanced feature. Life was always busy :). Here is my learning after reading two
+chapters of a book and doing some googling. I spent about 6 hours of book, but I
+have understood and lot and hopefully I will be productive enough to save back
+my 6 hours.
+
+Basics:
+-------
+* Sed process one line at at time: It is helpful to imagine sed one-liner also as
+a script. Sed functions like this: Normally a line is read into the pattern
+space and each command in the script one right after the another is applied to
+that line. When the bottom of the script is reached, the line is output and
+pattern spae is cleared. Then a new line is read into the pattern space and
+control passes back to the top of the script. However boring this sounds, but
+this is FUNDAMENTAL. I was not understanding this and was confused when looking
+at a lot of sed command.
+* sed does not need single quotes and -e in all cases.  "sed -e '10d'
+ ~/.ssh/known_hosts" can be simply written as "sed 10d ~/.ssh/known_hosts"
+* Multiple commands can be applied to an address using braces i.e. { and }
+* sed substitution support n, g, p, w
+* sed substitution can use delimiter other than the /. e.g. sed
+'s!/jay/mail!/JAY/mail!g' fileName
+* sed replacement pattern in substitution command does not recognize \n as new
+ line. You need to use a new line character.
+* sed replacement pattern use & to mean the matched regex pattern.
+
+Advanced:
+---------
+* Sed hold space: Content of pattern space can be copied to hold space. Commands
+h, H, g, G, x are used to move lines between pattern and hold space. The hold
+space is for temporary storage, and that's it. Individual command cannot address
+the hold space or alter its content. Understand this, I do not know why I waited
+for a decade to understand this.
+   * Hold h or H copy or append contents of pattern space to hold space
+   * Get  g or G copy or append contents of hold**space to pattern space
+   * Exchange x  swap the two
+* sed list command can be used to see non printable chars in the pattern space.
+* sed next command (n) outputs the pattern space and then reads next line of
+ input without returning to the top of the script.
+* sed supports labels. Labels are defined on it own line starting with colon.
+ Jumping can be done by using b (branch) or t (test).
+
+List of things which I can do in a new way with better understanding:
+---------------------------------------------------------------------
+
+* You can simulate the Either/Or match in a single pass without using gsed.
+   * gsed 's/jay|jAy/JAY/g' /root/names
+   * can also be written using normal sed.
+   * sed -e 's/jay/JAY/g' -e 's/jAy/JAY/g' /root/names
+* Address can be negated using !. sed '$!p' file will print all lines except
+last. sed '1!p' file will print all lines except the first line.
