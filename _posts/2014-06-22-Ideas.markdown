@@ -1,0 +1,10 @@
+---
+layout: post
+title:  Ideas
+date:   2014-02-08
+---
+
+Post to capture various ideas I have. If you like a idea, feel free to use it.
+
+Ideas:
+* SMS with read receipt, something mail read-receipt.
