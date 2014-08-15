@@ -11,10 +11,10 @@ rules for this keyword.
 
 Javascript can invoke function in four differnt ways:
 
- * Method invocation
- * Function invocation
- * Apply/Call invocation
- * Constructor invocation
+*   Method invocation
+*   Function invocation
+*   Apply/Call invocation
+*   Constructor invocation
 
 The pattern mainly differ in how the this parameter is initialized.  When you
 use obj.func(), you would invoke func with the method invocation pattern and
