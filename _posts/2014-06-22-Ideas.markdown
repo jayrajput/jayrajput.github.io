@@ -8,5 +8,7 @@ Post to capture various ideas I have. If you like a idea, feel free to use it.
 
 Ideas:
 
-* SMS with read receipt, something like mail read-receipt.
-* A open-source evaluator which can be used for evalution. 
+*   SMS with read receipt, something like mail read-receipt.
+*   A open-source evaluator which can be used for evalution. 
+*   Phone Time Base Profile. When I am in office set to VIBRATE, else set to SOUND.
+*   Recursive alarm. useful for alarm for medicine which needs to be taken on alternate days.
