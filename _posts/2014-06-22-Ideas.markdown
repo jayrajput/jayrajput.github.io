@@ -12,3 +12,6 @@ Ideas:
 *   A open-source evaluator which can be used for evalution. 
 *   Phone Time Base Profile. When I am in office set to VIBRATE, else set to SOUND.
 *   Recursive alarm. useful for alarm for medicine which needs to be taken on alternate days.
+*   Pdf File format with metadata, so that user can save metadata inside it. For books, you can store author name, book name, type and other details.
+*   Test Execution Reporting Tool. A big project with support fo RTM.
+*   Library/function to pretty print PHP arrays, associative array.
