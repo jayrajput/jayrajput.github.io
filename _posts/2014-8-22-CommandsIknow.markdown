@@ -57,3 +57,6 @@ Commands I know. Adding them here so that I take time to learn more about them.
 *   hostname
 *   uptime
 *   tee
+
+*   Vagrant
+*   Ansible
