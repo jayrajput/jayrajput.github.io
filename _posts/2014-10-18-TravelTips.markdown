@@ -1,0 +1,7 @@
+* Bag turned out to be a problem but the lady at New York was nice enough to check it in. Take care of the dimension and weight.
+* The backpack laptop bag which I bought for my wife was not considered as a laptop bag due to which we had to check-in our nautica bag. Also now they have a concept of checkin friendly laptop bag, may be buy that.
+* They also weigh all the bags but all the bags were within the limit.
+* The customs at India read the VISA expiration date wrongly as 01APR2013 in place of 01APR2014 and were asking why we over-stayed. I made him clear that he is wrongly reading the date and things were OK, but it brought a new light on discussion of if you can stay more than your VISA. In case you stay more than your visa, better to take a photo stat copy of your I-94.
+* New York airport is big and the ticket does not tell you about the gate and terminal. At New York, you have to take an air train to go to your terminal. The terminal are dedicated to flights, so doing an internet search for your terminal shall be done and 2-3 hour (preferred is 3 hour) transit time is needed as you have to go through the security again.
+* carry moisturizer, biscuits and chocos. This helps with the hunger pangs.
+* Chocos fo friends and family can also be bought from duty free. Google for chocos at duty free. Atleast the Dubai airport has lot of chocos.
