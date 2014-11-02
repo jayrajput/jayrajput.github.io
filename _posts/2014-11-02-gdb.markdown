@@ -1,9 +1,3 @@
----
-layout: post
-title:  Stack Overflow
-date:   2014-11-2
----
-
 Always thought that the stack overflow was a theory and will never happen other
 than infinite recursion.  Turned out I was wrong. Here is a little entry
 documenting my personal experience.
