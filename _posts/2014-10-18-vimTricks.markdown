@@ -6,13 +6,17 @@ date   : 2014-10-18
 
 
 *   Command to execute a current line as a shell command
+
 ```
 .w !sh
 ```
+
 *   Command to execute a visual selection as a shell command.
+
 ```
 '<,'>w !sh
 ```
+
 *   Use zg to add a word to ~/.vim/spell/latin.something
 *   Use ]s to move to next ad spelled word.
 *   Tmux Send 
