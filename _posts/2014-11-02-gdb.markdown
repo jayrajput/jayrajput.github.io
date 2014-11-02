@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Stack Overflow
-date:   2014-09-5
+date:   2014-11-2
 ---
 
 Always thought that the stack overflow was a theory and will never happen other
@@ -25,6 +25,7 @@ case it was just entrying the function. Luckily I had read Ground Up
 Programming by Jonathan Bartlett :).
 
 Dummy backtrace:
+
 ````
 (gdb) bt
 #0  0x0000000000406aa9 in functionNamexxx::perform (this=Cannot access memory at address 0x7ffff27402e8) at myProject.C:81
@@ -34,6 +35,7 @@ Dummy backtrace:
 ````
 
 To debug, get the assembly for the frame 0. Example below
+
 
 ````
 (gdb) disas 0x0000000000406aa9
@@ -50,6 +52,7 @@ Dump of assembler code for function functionNamexxx::perform
 ````
 
 Know the basics of a function call (refer to groud up programming by Jonathan Bartlett Chapter 4)
+
 *   Caller pushes the parameters on the stack. Not shown in the assembly code.
 *   Caller pushes the return address on the stack. Not shown in the assembly code.
 *   Callee pushes the old rbp to the stack. push %rbp in assembly code.
@@ -63,6 +66,7 @@ The mov command trying to copy to the memory location fails as the destination
 memory location does not exist.
 
 More Info:
+
 *   Base pointer is a special register used for accessing locals and arguments.
 *   mov %rsp, %rbp is different from mov (%rsp), %rbp. Second mov will copy the content pointed by %rsp in place of the address.
 *   GDB command info register rbp can be used to see the details of a register.
