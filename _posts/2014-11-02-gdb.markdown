@@ -1,0 +1,68 @@
+---
+layout: post
+title:  Stack Overflow
+date:   2014-09-5
+---
+
+Always thought that the stack overflow was a theory and will never happen other
+than infinite recursion.  Turned out I was wrong. Here is a little entry
+documenting my personal experience.
+
+I saw a stack overflow in my code. The code was trying to allocate an object of
+about 31 MB and stack overflow happened. After some experiments, we knew that
+there was a problem with the stack, but a proof was needed.
+
+There was no specific error from GDB or OS suggesting that it is stack
+overflow.  The error seen in the backtrace was "Cannot access memory at address
+0x7ffff27402e8".  This error can map to multiple thing. I was hoping an
+explicitly log, but no one cared. The reason might be checking if a code is
+doing a stack overflow will require extra checks which will slow down things
+and C/C++ are meant to be fast. Try to google for this error and various link
+will tell about looking at your code for pointers and allocation. I think you
+need to look at the assembly code and then your code. Assembly code will give
+you a direct mapping with your code having the problem (much easier). And in my
+case it was just entrying the function. Luckily I had read Ground Up
+Programming by Jonathan Bartlett :).
+
+Dummy backtrace:
+````
+(gdb) bt
+#0  0x0000000000406aa9 in functionNamexxx::perform (this=Cannot access memory at address 0x7ffff27402e8) at myProject.C:81
+#1  0x0000000000405ca5 in anotherFunctionNamexygabcdd (name=0x4077fe) at filename.C:280
+#2  0x000000347b6079d1 in start_thread () from /lib64/libpthread.so.0
+#3  0x000000347aee8b6d in clone () from /lib64/libc.so.6
+````
+
+To debug, get the assembly for the frame 0. Example below
+
+````
+(gdb) disas 0x0000000000406aa9
+Dump of assembler code for function functionNamexxx::perform
+   0x0000000000406a9e <+0>:     push   %rbp       
+   0x0000000000406a9f <+1>:     mov    %rsp,%rbp  
+   0x0000000000406aa2 <+4>:     sub    $0x1f1c630,%rsp 
+=> 0x0000000000406aa9 <+11>:    mov    %rdi,-0x1f1c628(%rbp) 
+   0x0000000000406ab0 <+18>:    lea    -0x1f1c620(%rbp),%rax
+   0x0000000000406ab7 <+25>:    mov    %rax,%rdi
+   0x0000000000406aba <+28>:    callq  0x405730 <_ZN12myconstructorv@plt>
+   0x0000000000406abf <+33>:    lea    -0x1f1c620(%rbp),%rax
+   0x0000000000406ac6 <+40>:    mov    %rax,%rdi
+````
+
+Know the basics of a function call (refer to groud up programming by Jonathan Bartlett Chapter 4)
+*   Caller pushes the parameters on the stack. Not shown in the assembly code.
+*   Caller pushes the return address on the stack. Not shown in the assembly code.
+*   Callee pushes the old rbp to the stack. push %rbp in assembly code.
+*   Callee moves  the rsp to the rbp. mov %rsp, %rbp in assembly code. This is
+    basically saving the stack pointer as the base pointer.
+*   Callee reserves space for locals. sub call in assembly code.
+*   Callee tries to copies the %rdi to the end of the memory reserved for the
+    local. This is where gdb shows "=>" which means the crash happened here.
+
+The mov command trying to copy to the memory location fails as the destination
+memory location does not exist.
+
+More Info:
+*   Base pointer is a special register used for accessing locals and arguments.
+*   mov %rsp, %rbp is different from mov (%rsp), %rbp. Second mov will copy the content pointed by %rsp in place of the address.
+*   GDB command info register rbp can be used to see the details of a register.
