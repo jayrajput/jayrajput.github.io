@@ -24,5 +24,3 @@ police station).
 As part of police verification, I was called by a police man who asked me for a
 form to be signed by two witness and provide proofs of stay. Telephone bills
 can also be used as a proof.
-
-

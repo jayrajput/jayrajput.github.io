@@ -1,3 +1,10 @@
+---
+layout: post
+title:  Bookmarks
+date:   2015-03-18 08:00:00
+permalink: /bookmark/
+---
+
 # Bookmarks bar
 
 # OTHERS
