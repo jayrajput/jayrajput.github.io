@@ -89,13 +89,9 @@ permalink: /bookmark/
 
 [nc](http://mylinuxbook.com/linux-netcat-command/)
 
-[Oracle BeehiveOnline](https://beehiveonline.oracle.com/)
-
 [headerClass](http://dojotoolkit.org/documentation/tutorials/1.6/populating_datagrid/)
 
 [Scaling a PHP MySQL Web Application, Part 1](http://www.oracle.com/technetwork/articles/dsl/white-php-part1-355135.html)
-
-[Safari Books Online - Premium - Home](http://techbus.safaribooksonline.com/?uicode=oracle)
 
 [Outstanding Staff](http://www.vetmed.wsu.edu/news/awards/outstanding-staff)
 
