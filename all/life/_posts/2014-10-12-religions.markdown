@@ -17,7 +17,6 @@ Things which I like about Christianty.
 **  Christians have the notion of dedicating Sunday to God. Sunday is considered
 as day of God. Imagine yourself waking up on a Sunday, and only thing you have
 to do is to dedicate to God. You need not think about your problems.
-*   Islam
 
 *   Jainism
 
@@ -26,14 +25,15 @@ http://www.jainpedia.org/resources/jainism-faqs.html
 
 
 
+*   Islam
 *   Islamic Words
-    **  Tawba  - 
-    **  Fitrah - Inner Nature
-    **  Iman   - 
-    **  Ruh - Soul
-    **  Mala'ikah - Angel
-    **  Jinn - Hidden
-    **  Allah - God
-    **  Masjid - Place of Worship
-    **  Shaytan - Evil
-    **  Tauhid - Oneness
+**  Tawba  - 
+**  Fitrah - Inner Nature
+**  Iman   - 
+**  Ruh - Soul
+**  Mala'ikah - Angel
+**  Jinn - Hidden
+**  Allah - God
+**  Masjid - Place of Worship
+**  Shaytan - Evil
+**  Tauhid - Oneness
