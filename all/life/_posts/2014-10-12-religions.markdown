@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Religionds
+title:  Religion
 date:   2014-10-12
 ---
 
