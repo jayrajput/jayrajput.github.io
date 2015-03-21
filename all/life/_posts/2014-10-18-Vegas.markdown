@@ -3,16 +3,16 @@ layout : post
 title  : Vegas
 date   : 2014-10-18
 ---
-Description:
 
 I made a west coast trip with my wife.  The west coast trip covered
-Las Vegas, Los Angeles and San Francisco.  Our trip was splitted into
+Las Vegas, Los Angeles and San Francisco.  Our trip was split into
 three parts.  Part2 was a 6-day tour organized by a travel company
 where we were part of a bigger group and were guided by our travel
 guide.  Part1 (3-day LV) and Part3 (1- day LA) were self exploration.
 
-Chronological order:
+# Itinerary
 
+````
 20121118 (Sun) - Reached LV and checked in hotel. Got an upgrade.
 20121119 (Mon) - Hotels, Shows and Buffets.
 20121120 (Tue) - Hotels, Shows and Buffets.
@@ -23,30 +23,28 @@ Chronological order:
 20121124 (Sat) - LA to SanJose
 20121125 (Sun) - SanJose to SFO, Stanford, Golden Gate, Twin Peaks,
 20121126 (Mon) - Yosemite, SanJose to LA.
-20121127 (Tue) - LA, Walk of fame, Wax Museum, Chinese Gruman, Kodak Theatre, Holly wood tour, Holly wood sign.
+20121127 (Tue) - LA, Walk of fame, Kodak Theatre, Holly wood tour, Holly wood sign.
 20121127 (Tue) - Evening flight from LA to LV.
 20121128 (Wed) - Back in RDU.
+````
 
-Costs:
+# Costs:
 
-Tour cost:
+## Tour cost:
+````
 682 for 2 people + 12 $ tip everyday for 2 people. Tour included hotel stay and commute. 
 Attraction admission fee was not included. Total Cost = 682 + 12 * 6 = 682 + 72 = 754.
+````
 
-Plane Tickets:
+## Plane Tickets:
+````
 LA - RDU  = 340.80 for two people including taxes.
 RDU - LV =  241.20 for two people including taxes
 Flamingo Hotel Prices: 100 $ for 3 days. Interestingly they gave us an upgrade as well.
 LA hotel for a single day (Nov 26) costed us 96 $.
+````
 
-Hotel Addresses:
-LV: Flamingo on the strip
-LV: Stratosphere on the strip.
-HolidayInn: SanJose (provided by tour company)
-Hampton Inn: LA (provided by tour company)
-LA: Best Western Airport Plaza Inn, 1730 Centinela Avenue, Inglewood, CA 90302
-
-LA experience:
+# Los Angeles
 
 The hotel we stayed was far away from the walk of the fame but there
 was a bus.  People scared us that it will take too much time with the
@@ -56,10 +54,11 @@ is "6801 Hollywood Blvd, Hollywood, CA 90028"
 
 LA has two major attractions Universal Studios and Walk of fame. Walk
 of fame is street with things around it. Since I have already been to
-universals in Orlandao, we opted for walk of fame. We bough the city
+universals in Orlandao, we opted for walk of fame. We bought the city
 pass which covered the most and was value for money.
 
 Free things to do at walk of fame:
+
 * Chiness Gruaman's theatre - this place has hand imprints of hollywood stars like Marlyn Monroe, Arnold and others.
 * Near to Chinese Grauman's theatre, they have piano stairs which make music when someone walks on them.
 * There is also a shopping complex which was used as a set for some
@@ -72,20 +71,21 @@ Things in the city pass:
 * Madam Tussad's wax museum
 * Oscar Theatre visit. A person will show you the oscar theatre from inside.
 * Walking tour of walk of fame and places around and old chinese theatre.
-* Tour of the LA on the open air jeep. They should us beverly hills, rodeo drive and mansion of hollywood stars.
+* Tour of the LA on the open air jeep. They showed us beverly hills, rodeo drive and mansion of hollywood stars.
 
 You should buy city pass only if you want to see Madam Tussad's and
 want to cover everything in a day.  If I had more time, exploring
 beverly hills and rodeo drive on self would be more fun.
 
-San Francisco:
+# San Francisco:
 
-I love this city. But you how the guided tours are, you just spend 5
-minutes at a place. If you have time and money, explore on your own.
-This was my second trip to SFO. The first trip was with bachelor
-friends and was a self exploration. Self exploration was fun.
+I love this city. But you know how the guided tours are, you just spend 5
+minutes at a place. If you have time and money, explore on your own.  This was
+my second trip to SFO. The first trip was with bachelor friends and was a self
+exploration. Self exploration was fun.
 
 Our guided tour included these:
+
 * Stanford university - saw Rodin "The Burghers of Calais"
   Not much here except for Rodin sculptures. The Burghers of Calais is
   multiple sculptures of war heros.
@@ -107,31 +107,33 @@ Our guided tour included these:
 * Twin peaks - magnificient view from here.
 * City Hall - just saw this from outside but was nice.
 
-Las Vegas:
+# Las Vegas:
 
 My wife loved this place than any other places where we have been. The
 best things about vegas is that if you feel tired you can just go and
 take rest at your hotel, so make sure you stay at strip.  Strip also
 has a lot of cheap hotels. 
 
-Free things to do in LasVegas:
-* Bellagio fountain. 
+## Free things to do in LasVegas:
+
+* Bellagio fountain.
 * Mirage volcano
 * TI pirates show
 * Forum shops has two free shows.
 * Flamingos at Flamingo.
 * Hotels to see - all
-** Wynn
-** Encore
-** Bellagio
-** Caesar Palace
-** Forum shops. Apple store has free wifi.
-** Luxor
-** Flamingo
-** New York New York
-** And lot others.
+  * Wynn
+  * Encore
+  * Bellagio
+  * Caesar Palace
+  * Forum shops. Apple store has free wifi.
+  * Luxor
+  * Flamingo
+  * New York New York
+  * And lot others.
 
-More paid things to do in LasVegas
+## More paid things to do in LasVegas
+
 * Go on top of Paris Effel tower.
 * Go to to the stratosphere top. Entry is free if you are staying at the hotel
 * Cars show. Old vintage car. Not much to see here.
@@ -139,8 +141,11 @@ More paid things to do in LasVegas
 * Crazy rides at Stratosphere
 * New York New York roller coaster.
 
+## Vegas Shows
+
 Shows we saw (we bought a 110 $$ coupon using TotalRewards card in
 which we can watch multiple shows in 48 hours)
+
 * Divas
 * Mac King - magic
 * Anthony cools - crazy hypnosis show. We liked it.
@@ -153,7 +158,16 @@ If you have the money watch any Cirque show.  We never saw because
 never had all the money :). But we did heard a lot about them.  We
 will try them next time.
 
-Grand Canyon:
+# Grand Canyon:
 
 Grand Canyon is awesome. Our travel guide took us to eagle point and
 guanna point where we were able to take some breath taking pictures.
+
+# Hotel Addresses:
+````
+LV: Flamingo on the strip
+LV: Stratosphere on the strip.
+HolidayInn: SanJose (provided by tour company)
+Hampton Inn: LA (provided by tour company)
+LA: Best Western Airport Plaza Inn, 1730 Centinela Avenue, Inglewood, CA 90302
+````
