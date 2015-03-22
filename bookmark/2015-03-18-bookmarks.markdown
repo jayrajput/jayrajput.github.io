@@ -25,6 +25,7 @@ date:   2015-03-18 08:00:00
 [Reading C type declarations](http://unixwiz.net/techtips/reading-cdecl.html)
 [nc](http://mylinuxbook.com/linux-netcat-command/)
 [ncurses - Highlighting and Selecting text with Python curses - Stack Overflow](http://stackoverflow.com/questions/6807808/highlighting-and-selecting-text-with-python-curses)
+[Programming Index](http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html)
 
 ## php
 [Scaling a PHP MySQL Web Application, Part 1](http://www.oracle.com/technetwork/articles/dsl/white-php-part1-355135.html)
