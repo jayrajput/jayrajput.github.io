@@ -27,12 +27,16 @@ date:   2015-03-18 08:00:00
 [ncurses - Highlighting and Selecting text with Python curses - Stack Overflow](http://stackoverflow.com/questions/6807808/highlighting-and-selecting-text-with-python-curses)
 [Programming Index](http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html)
 
+## git
+[Visual git checkout and reset](http://marklodato.github.io/visual-git-guide/index-en.html)
+
 ## php
 [Scaling a PHP MySQL Web Application, Part 1](http://www.oracle.com/technetwork/articles/dsl/white-php-part1-355135.html)
 [PHP Segfault](http://www.robertames.com/blog.cgi/entries/debugging-php-segfault-backtraces-with-gdb.html)
 
 ## javascript
 [Events and timing in-depth | JavaScript Tutorial](http://javascript.info/tutorial/events-and-timing-depth)
+[D3 presentation by Mike](http://bost.ocks.org/mike/d3/workshop)
 
 ## gnucash
 [Custom Reports - GnuCash](http://wiki.gnucash.org/wiki/Custom_Reports)

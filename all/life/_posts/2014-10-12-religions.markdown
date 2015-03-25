@@ -7,7 +7,7 @@ date:   2014-10-12
 
 Religion is an interesting topic to me. For me, religion has provided me answers
 to many questions and given me happiness. I am HINDU by birth. But I also
-learned a lot from other religions. Her is my notes/learning about different
+learned a lot from other religions. Here are my notes/learning about different
 religion:
 
 # Hinduism
@@ -27,13 +27,13 @@ http://www.jainpedia.org/resources/jainism-faqs.html
 # Islam
 
 * Islamic Words
-  * Tawba  - 
-  * Fitrah - Inner Nature
-  * Iman   - 
-  * Ruh - Soul
+  * Tawba     - 
+  * Fitrah    - Inner Nature
+  * Iman      - 
+  * Ruh       - Soul
   * Mala'ikah - Angel
-  * Jinn - Hidden
-  * Allah - God
-  * Masjid - Place of Worship
-  * Shaytan - Evil
-  * Tauhid - Oneness
+  * Jinn      - Hidden
+  * Allah     - God
+  * Masjid    - Place of Worship
+  * Shaytan   - Evil
+  * Tauhid    - Oneness
