@@ -1,0 +1,129 @@
+---
+title: Text email
+---
+
+Mutt is a text based email client and I have been successfully using it since
+few days. My enthusiasm level is too high as I am able to just save amazing
+amount of time. Here is how I got my configuration done:
+
+I use MUTT only as an email client to read and write the email. The job of
+retreiving the emails and sending the email are are done by fetchmail and
+msmtp. I also use procmail in addition to mutt, fetchmail and msmtp. The
+procmail is strictly not needed, but the every tutorial I read on the internet
+was using procmail and I also ended up using it.
+
+Configuration of mutt, procmail, fetchmail and msmtp by editing their
+configuration files.
+
+I also use following mutt addon to make my life easier
+
+- urlviewer (to display the urls in the emails)
+- feh  (to view images)
+- elinks (to view html email)
+
+The installation of all the components are done using yum install.
+
+~~~
+sudo yum install mutt procmail fetchmail msmtp urlview feh elinks
+~~~
+
+Al the configuration files can be seen in the git repository.
+
+Files which needs to be edited
+
+- ~/.muttrc (Mutt configuration file)
+- ~/.fetchmailrc (fetchmail configuration file)
+- ~/.procmailrc  (procmail configuration file)
+- ~/.msmtp   (msmtp - needed for sending emails)
+- ~/mailcap  (mail cap configuration - need for different MIME types)
+- ~/.urlviewer
+
+# Reading mails
+
+Readin can be done in two views in mutt
+
+- Index view (showing all the emails without their content)
+- Pager view (showing single email with the content of email)
+
+
+## Flags and their meaning
+
+~~~
++ Sent only to me
+T Sent to me and others
+C Cced to you
+F from you
+N new mail
+O old mail
+D message is deleted
+! message is flagged
+* message is tagged
+~~~
+
+## Common commands
+
+~~~
+? help
+^L refresh screen
+~~~
+
+## Index view commands
+
+~~~
+j Move down
+k Move up
+= go to the top
+* go to the last email
+<tab> move to next unread mail
+C-r move to next thread and mark this thread as read
+P jump to parent message
+Esc v collapse thread
+/ search for a mail
+n go to next mail matching the search
+m compose a mail
+r reply
+g reply all
+q exit
+c change to a different mailbox (like sent or postpone)
+l show message matching a pattern
+<Return> show message
+~~~
+
+## Pager view commands
+
+~~~
+Space move to next page
+enter move to next line
+-     move back a page
+a     view attachment
+f1    view URLS (this is configurable and I have mapped it to f1>
+i     move back to the index view
+j     go to next email
+k     to to last email
+~~~
+
+# Writing mail
+
+## How to write a new mail
+
+Hit m to compose a mail. Provide value for To, Cc and subject. When down mutt will open a new mail in an editor.
+Once done with the editor close the editor (for vim hit ZZ), mutt will ask what to do next:
+
+~~~
+y send mail
+p postpone mail (mail will be sent in postpone folder, similar to outlook drafts)
+q abort 
+~~~
+
+## How to respond to a mail
+
+Hit these to reply to a mail and then follow the steps similar to use for writing a new mail
+
+~~~
+r reply only to the sender
+g reply all
+f forward mail
+b bounce
+a attach a file
+A attach mails
+~~~
