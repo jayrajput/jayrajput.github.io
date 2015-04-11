@@ -7,12 +7,12 @@ few days. My enthusiasm level is too high as I am able to just save amazing
 amount of time. Here is how I got my configuration done:
 
 I use MUTT only as an email client to read and write the email. The job of
-retreiving the emails and sending the email are are done by fetchmail and
+retrieving the emails and sending the email are are done by fetchmail and
 msmtp. I also use procmail in addition to mutt, fetchmail and msmtp. The
 procmail is strictly not needed, but the every tutorial I read on the internet
 was using procmail and I also ended up using it.
 
-Configuration of mutt, procmail, fetchmail and msmtp by editing their
+Configuration of mutt, procmail, fetchmail and msmtp are done by editing their
 configuration files.
 
 I also use following mutt addon to make my life easier
@@ -27,7 +27,7 @@ The installation of all the components are done using yum install.
 sudo yum install mutt procmail fetchmail msmtp urlview feh elinks
 ~~~
 
-Al the configuration files can be seen in the git repository.
+Al the configuration files can be seen at the end of the article.
 
 Files which needs to be edited
 
@@ -35,16 +35,15 @@ Files which needs to be edited
 - ~/.fetchmailrc (fetchmail configuration file)
 - ~/.procmailrc  (procmail configuration file)
 - ~/.msmtp   (msmtp - needed for sending emails)
-- ~/mailcap  (mail cap configuration - need for different MIME types)
+- ~/.mailcap  (mail cap configuration - need for different MIME types)
 - ~/.urlviewer
 
 # Reading mails
 
-Readin can be done in two views in mutt
+Reading can be done in two views in mutt
 
 - Index view (showing all the emails without their content)
 - Pager view (showing single email with the content of email)
-
 
 ## Flags and their meaning
 
@@ -53,8 +52,8 @@ Readin can be done in two views in mutt
 T Sent to me and others
 C Cced to you
 F from you
-N new mail
-O old mail
+N new mail (Received after the MUTT was started and not read)
+O old mail (Received before the MUTT was started, but is not read)
 D message is deleted
 ! message is flagged
 * message is tagged
@@ -96,7 +95,7 @@ Space move to next page
 enter move to next line
 -     move back a page
 a     view attachment
-f1    view URLS (this is configurable and I have mapped it to f1>
+f1    view URLS (this is configurable and I have mapped it to f1)
 i     move back to the index view
 j     go to next email
 k     to to last email
@@ -106,13 +105,14 @@ k     to to last email
 
 ## How to write a new mail
 
-Hit m to compose a mail. Provide value for To, Cc and subject. When down mutt will open a new mail in an editor.
-Once done with the editor close the editor (for vim hit ZZ), mutt will ask what to do next:
+Hit m to compose a mail. Provide value for To, Cc and subject. When down mutt
+will open a new mail in an editor.  Once done with the editor close the editor
+(for vim hit ZZ), mutt will ask what to do next:
 
 ~~~
 y send mail
-p postpone mail (mail will be sent in postpone folder, similar to outlook drafts)
 q abort 
+p postpone mail (mail will be sent in postpone folder, similar to outlook drafts)
 ~~~
 
 ## How to respond to a mail
@@ -126,4 +126,133 @@ f forward mail
 b bounce
 a attach a file
 A attach mails
+~~~
+
+# Configuration Files 
+
+## ~/.fetmailrc 
+
+configuration file has a weird syntax but works. Some people prefer getmail
+
+~~~
+set daemon 3600
+
+poll mailserver.company.com protocol IMAP:
+    user "jay.rajput@company.com" password "password"  is jarajput here 
+    mda "/usr/bin/procmail -d %T"        
+    keep                                 
+    ssl                                  
+~~~
+
+## ~/.procmailrc 
+
+I am not really using procmail for anything, but did not find any tutorial online to configure mutt without the procmail
+
+~~~
+PATH=/bin:/usr/bin:/usr/local/bin 
+VERBOSE=off                   # Turn on for verbose log
+MAILDIR=$HOME/Mail            # Where Procmail recipes deliver
+LOGFILE=$HOME/.procmaillog    # Keep a log for troubleshooting.
+# Recipes
+:0:
+* ^TOmutt-user
+mutt
+~~~
+
+## ~/.msmtprc 
+
+I am connecting to davmail instance locally running as my email has only
+provides Outlook WebAccess, so my configuration will differ from you and should
+be much easier if you have direct POP3 or IMAP acccess.
+
+~~~
+defaults
+logfile ~/.msmtp.log
+
+account default              
+host localhost
+port 1025
+protocol smtp
+auth plain
+from "jay.rajput@company.com"
+user "jay.rajput@company.com"
+password "password"       
+tls off
+~~~
+
+## ~/.muttrc 
+
+This configuration uses mbox format, and I am planning to move to maildir
+
+~~~
+#======================================================#
+# Boring details
+set realname = "Jay Rajput"
+set from = jay.rajput@company.com
+set use_from = yes
+set envelope_from ="yes"
+set sendmail="/usr/bin/msmtp"
+
+# If not set in environment variables:
+set spoolfile = /var/spool/mail/jarajput
+
+#======================================================#
+# Folders
+set folder="~/Mail"                # Mailboxes in here
+set record="+sent"                 # where to store sent messages
+set postponed="+postponed"         # where to store draft messages
+set move=no                        # Don't move mail from the spool.
+
+#======================================================#
+# Watch these mailboxes for new mail:
+mailboxes ! +Fetchmail +slrn +mutt
+set sort_browser=alpha    # Sort mailboxes by alpha(bet)
+
+#======================================================#
+# Order of headers and what to show
+hdr_order Date: From: User-Agent: X-Mailer \
+          To: Cc: Reply-To: Subject:
+ignore *
+unignore Date: From: User-Agent: X-Mailer  \
+         To: Cc: Reply-To: Subject:
+               
+#======================================================#
+# which editor do you want to use? 
+# vim of course!
+#set editor="vim -c 'set tw=70 et' '+/^$' " 
+set editor="vim '+/^$' " 
+set edit_headers          # See the headers when editing
+
+#======================================================#
+# Aliases
+
+set sort_alias=alias     # sort aliases in alpha order by alias name
+
+#======================================================#
+# Odds and ends
+set markers          # mark wrapped lines of text in the pager with a +
+set smart_wrap       # Don't wrap mid-word
+set pager_context=5  # Retain 5 lines of previous page when scrolling.
+set status_on_top    # Status bar on top.
+push <show-version>  # Shows mutt version at startup
+
+
+# Index View Options
+set date_format = "%m/%d %I:%M"
+set index_format = "[%Z]  %D  %-20.20F  %s"
+set sort = threads                         # like gmail
+#set sort_aux = reverse-date-received  # like gmail 
+set sort_aux = reverse-last-date-received  # like gmail
+set uncollapse_jump                        # don't collapse on an unread message
+set sort_re                                # thread based on regex
+set reply_regexp = "^(([Rr][Ee]?(\[[0-9]+\])?: *)?(\[[^]]+\] *)?)*"
+
+# http://jasonwryan.com/blog/2012/05/12/mutt/
+#
+auto_view text/html
+alternative_order text/plain text/enriched text/html
+
+# http://mutt.blackfish.org.uk/following-links/
+macro pager <f1> <pipe-entry>'urlview'<enter> 'Follow links with urlview' 
+# set pager_index_lines = 4
 ~~~
