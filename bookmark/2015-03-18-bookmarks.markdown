@@ -26,6 +26,7 @@ date:   2015-03-18 08:00:00
 [nc](http://mylinuxbook.com/linux-netcat-command/)
 [ncurses - Highlighting and Selecting text with Python curses - Stack Overflow](http://stackoverflow.com/questions/6807808/highlighting-and-selecting-text-with-python-curses)
 [Programming Index](http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html)
+[Sofia Courses](http://sofia.fhda.edu/gallery/)
 
 ## git
 [Visual git checkout and reset](http://marklodato.github.io/visual-git-guide/index-en.html)
