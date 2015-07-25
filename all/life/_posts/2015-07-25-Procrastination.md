@@ -3,10 +3,12 @@ title: Procrastination
 ---
 
 I have seen myself procrastinating in my life. I started researching about the
-topic and the revelation were surprising. Here are the notes for other chronic
-procrastinator. Each section is from a book and what I learned from that.
+topic and the revelation was surprising. Here are the notes for other chronic
+procrastinator (and me to refer back). Each section is from a book and what I
+learned from that.
 
-# 6 styles of Procrastination by Dr. Linda Sapadin with Jack Maguire
+<details>
+    <summary>6 styles of Procrastination by Dr. Linda Sapadin with Jack Maguire</summary>
 
 Linda defines six types of procrastination
 
@@ -35,5 +37,4 @@ After the definition, follows a self-assesment. Here are my results:
     Defier        | 1     |       | YES   | 5
 
 I am not fan of these self-assesment test, so let us see how it goes.
-
-
+</details>
