@@ -31,10 +31,16 @@ After the definition, follows a self-assesment. Here are my results:
                   | Total | Major | Minor | Rank
     Crisis-Maker  | 10    | YES   |       | 1
     Over-doer     | 10    | YES   |       | 1
-    Perfectionist | 8     |       | YES   | 2
-    Worrier       | 7     |       | YES   | 3
-    Dreamer       | 5     |       | YES   | 4
-    Defier        | 1     |       | YES   | 5
+    Worrier       | 7     |       | YES   | 2
+    Dreamer       | 5     |       | YES   | 3
+    Defier        | 1     |       | YES   | 4
+    Perfectionist | 0     |       | YES   | 5
 
 I am not fan of these self-assesment test, so let us see how it goes.
+
+Example of Perfectionist procrastinators are given. There are some who work
+real hard and long hours to make their work perfect. Some do not start to work,
+procrastinating, so that they can make an excuse that they were not able
+to deliver a perfect result because of the lack of the time.
+
 </details>
