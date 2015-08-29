@@ -58,3 +58,6 @@ The sites section is important and that is the one which sets up the nginx
 server.
 
 You are all set, run vagrant up from the Homestead folder.
+
+References
+- http://laravel.com/docs/5.0/homestead
