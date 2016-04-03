@@ -1,6 +1,6 @@
 name        : Jay Rajput Blog
-markdown    : redcarpet
-highlighter : pygments
+markdown    : kramdown
+highlighter : rouge
 defaults:
   - 
     scope:
